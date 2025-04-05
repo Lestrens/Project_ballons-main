@@ -12,6 +12,12 @@
         z-index: 200
         text-align: center
         cursor: pointer
+        @include respond(tab-land)
+            height: 6rem
+            width: 6rem
+        @include respond(tab-port)
+            height: 4rem
+            width: 4rem
     &__background
         width: 6rem
         height: 6rem
@@ -22,6 +28,14 @@
         top: 11rem
         z-index: 100
         transition: all .7s
+        @include respond(tab-land)
+            top: 10rem
+            right: 10rem
+            height: 6rem
+            width: 6rem
+        @include respond(tab-port)
+            height: 4rem
+            width: 4rem
         //transform: scale(80)
     &__nav
         height: 100vh
@@ -44,10 +58,9 @@
         &:not(:last-child)
             margin-bottom: .5rem
 
-            
+
     &__link
         &:link, &:visited
-            
             font-size: 4rem
             color: $color-white
             letter-spacing: .5rem
@@ -74,6 +87,10 @@
     &__icon
         position: relative
         margin-top: 3.7rem
+        @include respond(tab-land)
+            margin-top: 3rem
+        @include respond(tab-port)
+            margin-top: 2rem
         &,
         &::before,
         &::after
@@ -81,6 +98,9 @@
             height: .2rem
             background: $color-black
             display: inline-block
+            @include respond(tab-port)
+                width: 2rem
+                height: .1rem
         &::before,
         &::after
             content: ""
@@ -92,9 +112,9 @@
         &::after
             top: 8px
     &__button:hover &__icon::before
-        top: -10px
+        top: -16px
     &__button:hover &__icon::after
-        top: 10px
+        top: 16px
     &__toggle:checked + &__button &__icon
         background: transparent
     &__toggle:checked + &__button &__icon::before
