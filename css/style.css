@@ -68,6 +68,11 @@ body {
   padding: 5rem;
   background-color: #FAFAFA;
 }
+@media (max-width: 900px) {
+  body {
+    padding: auto;
+  }
+}
 
 .container {
   background-color: #e6e6e6;
