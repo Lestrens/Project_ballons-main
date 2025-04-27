@@ -12,6 +12,7 @@
         z-index: 200
         text-align: center
         cursor: pointer
+        box-shadow: $box-shadow
         @include respond(tab-land)
             height: 6rem
             width: 6rem
@@ -109,12 +110,24 @@
             transition: all .2s
         &::before
             top: -8px
+            @include respond(tab-land)
+                top: -6px
+            @include respond(tab-port)
+                top: -4px
         &::after
             top: 8px
+            @include respond(tab-land)
+                top: 6px
+            @include respond(tab-port)
+                top: 4px
     &__button:hover &__icon::before
         top: -16px
+        @include respond(tab-land)
+            top: -8px
     &__button:hover &__icon::after
         top: 16px
+        @include respond(tab-land)
+            top: 8px
     &__toggle:checked + &__button &__icon
         background: transparent
     &__toggle:checked + &__button &__icon::before
