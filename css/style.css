@@ -70,7 +70,7 @@ body {
 }
 @media (max-width: 900px) {
   body {
-    padding: auto;
+    padding: 0rem;
   }
 }
 
