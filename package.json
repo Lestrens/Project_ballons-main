@@ -1,23 +1,29 @@
 {
-  "name": "tours",
-  "version": "1.0.1",
-  "description": "My project",
-  "homepage": "https://github.com/Lestrens/Project_ballons-main#readme",
-  "bugs": {
-    "url": "https://github.com/Lestrens/Project_ballons-main/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lestrens/Project_ballons-main.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "name": "tour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
-    "compile:sass": "sass sass/style.sass css/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "sass": "^1.88.0"
-  }
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
